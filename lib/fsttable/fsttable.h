@@ -5,6 +5,7 @@
 
 #include <vector>
 #include <string>
+#include <cstring>
 #include <stdexcept>
 #include <memory>
 #include <algorithm>
@@ -572,6 +573,10 @@ public:
 	StringEncoding Encoding()
 	{
 		return StringEncoding::LATIN1;
+	}
+
+	std::vector<std::string>* getData() {
+	    return strVecP;
 	}
 };
 
